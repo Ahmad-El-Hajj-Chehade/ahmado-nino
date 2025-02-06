@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ahmado-nino/static/css/main.e466c75c.css",
-    "main.js": "/ahmado-nino/static/js/main.0761d6d0.js",
+    "main.js": "/ahmado-nino/static/js/main.778c628d.js",
     "static/media/background.jpg": "/ahmado-nino/static/media/background.22e0e63cd4dad5796c32.jpg",
     "index.html": "/ahmado-nino/index.html",
     "main.e466c75c.css.map": "/ahmado-nino/static/css/main.e466c75c.css.map",
-    "main.0761d6d0.js.map": "/ahmado-nino/static/js/main.0761d6d0.js.map"
+    "main.778c628d.js.map": "/ahmado-nino/static/js/main.778c628d.js.map"
   },
   "entrypoints": [
     "static/css/main.e466c75c.css",
-    "static/js/main.0761d6d0.js"
+    "static/js/main.778c628d.js"
   ]
 }
