@@ -104,7 +104,7 @@
   display: none;
 }
 /* Responsive Design */
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .portfolio {
     padding: 80px 15px;
   }
