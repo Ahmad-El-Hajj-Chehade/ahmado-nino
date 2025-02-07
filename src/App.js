@@ -12,7 +12,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/ahmado-nino">
+    <BrowserRouter basename="/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
