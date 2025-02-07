@@ -1,16 +1,20 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
 
+import "./Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav>
-      <div className="nav-title"onClick={() => setIsOpen(!isOpen)}>Ahmado & Nino Photography</div>
-      
+      <div className="nav-header">
+        <div className="nav-title">Ahmado & Nino Photography</div>
+        <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </div>
+      </div>
+
       <ul className={isOpen ? "show" : ""}>
-        <li><a href="/#home">Home</a></li>
+        <li><a href="/ahmado-nino">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -20,3 +24,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

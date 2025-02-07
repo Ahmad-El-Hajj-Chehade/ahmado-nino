@@ -12,9 +12,10 @@
 .albums {
   text-decoration: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Two albums per row */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two albums per row */
   grid-row: auto;
-  grid-row-gap: 20px;
+  grid-column-gap:50px;
+  grid-row-gap: 50px;
   justify-items: center;
   
 }
@@ -31,7 +32,7 @@
   text-align: center;
   transition: transform 0.3s ease;
   width: 100%;
-  max-width: 500px; /* Ensures uniform width */
+  max-width: 400px; /* Ensures uniform width */
   min-width: 100px;
 }
 .portfolio-title{
@@ -99,11 +100,18 @@
   font-size: 40px;
   cursor: pointer;
 }
-
+.menu-icon{
+  display: none;
+}
 /* Responsive Design */
 @media (max-width: 500px) {
   .portfolio {
     padding: 80px 15px;
+  }
+
+  .menu-icon{
+    justify-content: center;
+    display:grid;
   }
 
   .album {

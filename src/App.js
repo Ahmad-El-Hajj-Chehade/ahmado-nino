@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import PlazaAlbum from "./pages/PlazaAlbum";
@@ -12,7 +12,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/ahmado-nino">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/praisecamp" element={<PraisecampAlbum />} />
         <Route path="/primeside-festival" element={<PrimesideAlbum />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

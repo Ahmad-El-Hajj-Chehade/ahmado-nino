@@ -7,8 +7,13 @@ const PlazaAlbum = () => {
 
   // Fetch the JSON file when the component mounts
   useEffect(() => {
-    fetch("/plaza_25_01_25/imageList.json")
-      .then((response) => response.json())
+    fetch(`${process.env.PUBLIC_URL}/plaza_25_01_25/imageList.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => setImageFilenames(data))
       .catch((error) => console.error("Error loading images:", error));
   }, []);
@@ -28,7 +33,7 @@ const PlazaAlbum = () => {
       <h1>Plaza Lemon Party</h1>
       <div className="album-grid">
         {imageFilenames.map((filename, index) => {
-          const imagePath = `/plaza_25_01_25/JPEG/${filename}`;
+          const imagePath = `${process.env.PUBLIC_URL}/plaza_25_01_25/JPEG/${filename}`;
           return (
             <div key={index} className="album-item" onClick={() => openLightbox(imagePath)}>
               <img src={imagePath} alt={`Plaza ${index + 1}`} />
