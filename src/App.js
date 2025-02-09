@@ -8,6 +8,7 @@ import UtopeKaufleutenAlbum from "./pages/UtopeKaufleutenAlbum";
 import KaufleutenAlbum from "./pages/KaufleutenAlbum";
 import PraisecampAlbum from "./pages/PraisecampAlbum";
 import PrimesideAlbum from "./pages/PrimesideAlbum";
+import MuriFasnachtAlbum from "./pages/MuriFasnachtAlbum";
 import "./App.css";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/kaufleuten_21_12_24" element={<KaufleutenAlbum />} />
         <Route path="/praisecamp" element={<PraisecampAlbum />} />
         <Route path="/primeside-festival" element={<PrimesideAlbum />} />
+        <Route path="/muri-fasnacht" element={<MuriFasnachtAlbum />} />
       </Routes>
     </BrowserRouter>
   );
