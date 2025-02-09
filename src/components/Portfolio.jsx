@@ -41,7 +41,7 @@ const Portfolio = () => {
         
         <Link to="/utope_21_12_24" className="album">
         <h3>Utope Kaufleuten</h3>
-          <p>Nightlife | DJ</p>
+          <p>Nightlife | DJ | People</p>
           <img src="utope_21_12_24/JPEG/Foto 21.12.24, 23 47 31.jpg" alt="Utope" />
           
         </Link>
