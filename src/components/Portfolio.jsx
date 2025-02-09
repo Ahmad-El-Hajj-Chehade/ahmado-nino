@@ -22,7 +22,7 @@ const Portfolio = () => {
         </Link>
 
         <Link to="/plaza_25_01_25" className="album">
-        <h3>Plaza 25 01 2025</h3>
+        <h3>Plaza Lemon</h3>
           <p>
             Nightlife | People
           </p>
