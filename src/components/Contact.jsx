@@ -42,7 +42,7 @@ const Contact = () => (
         {/* Phone */}
         <div className="contact-item">
         
-          <a href="tel:+1234567890">+41 77 505 23 75 </a>
+          <a href="tel:+41775052375">+41 77 505 23 75 </a>
           <i className="fas fa-phone"></i>
         </div>
       </div>
