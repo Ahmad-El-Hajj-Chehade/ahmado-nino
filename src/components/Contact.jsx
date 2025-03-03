@@ -9,7 +9,7 @@ const Contact = () => (
         {/* Email */}
         <div className="contact-item">
          
-          <a href="mailto:booking@ahmado-nino.com">booking@ahmado-ninoraw.com </a>
+          <a href="mailto:booking@ahmado-ninoraw.com">booking@ahmado-ninoraw.com </a>
           <i className="fas fa-envelope"></i>
         </div>
 
