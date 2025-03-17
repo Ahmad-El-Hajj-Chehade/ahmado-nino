@@ -9,6 +9,15 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       </div>
       <div className="albums">
+        <Link to="/shinefest" className="album">
+          <h3>Shinefest 15.03.2025</h3>
+          <p>
+            Nightlife | Artists | People
+          </p>
+          <img
+              src="sheinefest_15_03_2025/JPEG/SWI-5.jpg"
+              alt="Shinefest"
+          />
       <Link to="/muri-fasnacht" className="album">
         <h3>Muri Fasnacht</h3>
           <p>
