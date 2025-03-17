@@ -18,6 +18,7 @@ const Portfolio = () => {
               src="sheinefest_15_03_2025/JPEG/SWI-5.jpg"
               alt="Shinefest"
           />
+        </Link>
       <Link to="/muri-fasnacht" className="album">
         <h3>Muri Fasnacht</h3>
           <p>

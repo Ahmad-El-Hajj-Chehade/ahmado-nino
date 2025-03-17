@@ -10,6 +10,7 @@ import PraisecampAlbum from "./pages/PraisecampAlbum";
 import PrimesideAlbum from "./pages/PrimesideAlbum";
 import MuriFasnachtAlbum from "./pages/MuriFasnachtAlbum";
 import "./App.css";
+import ShineFestAlbum from "./pages/ShineFestAlbum";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/praisecamp" element={<PraisecampAlbum />} />
         <Route path="/primeside-festival" element={<PrimesideAlbum />} />
         <Route path="/muri-fasnacht" element={<MuriFasnachtAlbum />} />
+          <Route path="/shinefest" element={<ShineFestAlbum />} />
       </Routes>
     </BrowserRouter>
   );
