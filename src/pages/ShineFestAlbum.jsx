@@ -103,4 +103,4 @@ const ShineFestAlbum = () => {
   );
 };
 
-export default UtopeKaufleutenAlbum;
+export default ShineFestAlbum;
