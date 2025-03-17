@@ -12,10 +12,10 @@ const Portfolio = () => {
         <Link to="/shinefest" className="album">
           <h3>Shinefest 15.03.2025</h3>
           <p>
-            Nightlife | Artists | People
+            Nightlife | Artists
           </p>
           <img
-              src="sheinefest_15_03_2025/JPEG/SWI-5.jpg"
+              src="shinefest_15_03_2025/JPEG/Foto 15.03.25, 20 13 09.jpg"
               alt="Shinefest"
           />
         </Link>
