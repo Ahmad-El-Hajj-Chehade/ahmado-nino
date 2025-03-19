@@ -30,11 +30,11 @@ const Contact = () => (
         <div className="contact-item">
           
           <a
-            href="https://www.instagram.com/ninofotografie/"
+            href="https://www.instagram.com/ninogonzalez_/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>ninofotografie </span>
+            <span>ninogonzalez_ </span>
           </a>
           <i className="fab fa-instagram"></i>
         </div>
