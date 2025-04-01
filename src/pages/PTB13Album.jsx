@@ -87,7 +87,7 @@ const PlazaAlbum = () => {
                     <span className="close-btn" onClick={closeLightbox}>&times;</span>
                     <img
                         className="lightbox-img"
-                        src={`${process.env.PUBLIC_URL}/plaza_25_01_25/JPEG/${imageFilenames[lightboxImageIndex]}`}
+                        src={`${process.env.PUBLIC_URL}/plaza_29_03_25/JPEG/${imageFilenames[lightboxImageIndex]}`}
                         alt="Enlarged"
                     />
                     <button className="prev-btn" onClick={(e) => { e.stopPropagation(); goPrev(); }}>&#10094;</button>
