@@ -4,13 +4,11 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import PlazaAlbum from "./pages/PlazaAlbum";
 import UmeaAlbum from "./pages/UmeaAlbum";
-import UtopeKaufleutenAlbum from "./pages/UtopeKaufleutenAlbum";
-import KaufleutenAlbum from "./pages/KaufleutenAlbum";
-import PraisecampAlbum from "./pages/PraisecampAlbum";
-import PrimesideAlbum from "./pages/PrimesideAlbum";
+
 import MuriFasnachtAlbum from "./pages/MuriFasnachtAlbum";
 import "./App.css";
-import ShineFestAlbum from "./pages/ShineFestAlbum";
+import PTB13Album from "./pages/PTB13Album";
+
 
 const App = () => {
   return (
@@ -21,7 +19,7 @@ const App = () => {
         <Route path="/plaza_25_01_25" element={<PlazaAlbum />} />
         <Route path="/umea_31_12_24" element={<UmeaAlbum />} />
         <Route path="/muri-fasnacht" element={<MuriFasnachtAlbum />} />
-          <Route path="/ptb13" element={<MuriFasnachtAlbum />} />
+          <Route path="/ptb13" element={<PTB13Album />} />
 
       </Routes>
     </BrowserRouter>
