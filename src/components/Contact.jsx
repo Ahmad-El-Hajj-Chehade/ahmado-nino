@@ -6,12 +6,6 @@ const Contact = () => (
     <div className="contact-container">
       <h2>Contact</h2>
       <div className="contact-info">
-        {/* Email */}
-        <div className="contact-item">
-         
-          <a href="mailto:booking@ahmado-ninoraw.com">booking@ahmado-ninoraw.com </a>
-          <i className="fas fa-envelope"></i>
-        </div>
 
         {/* Instagram - Ahmado */}
         <div className="contact-item">
@@ -26,18 +20,7 @@ const Contact = () => (
           <i className="fab fa-instagram"></i>
         </div>
 
-        {/* Instagram - Nino */}
-        <div className="contact-item">
-          
-          <a
-            href="https://www.instagram.com/ninogonzalez_/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>ninogonzalez_ </span>
-          </a>
-          <i className="fab fa-instagram"></i>
-        </div>
+
 
         {/* Phone */}
         <div className="contact-item">
@@ -48,7 +31,7 @@ const Contact = () => (
       </div>
 
       <div className="credits">
-        <p>Ahmado & Nino Photography</p>
+        <p>Ahmado Photography</p>
       </div>
     </div>
   </section>

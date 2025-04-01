@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-header">
-        <div className="nav-title">Ahmado & Nino Photography</div>
+        <div className="nav-title">Ahmado Photography</div>
        
       </div>
       <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>

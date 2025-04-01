@@ -5,26 +5,11 @@ const About = () => (
   <section id="about" className="about-section">
     {/* Title and introductory paragraph */}
     <div className="about-header">
-      <h2>About Us</h2>
-      <p>
-        We are Ahmado & Nino, passionate photographers specializing in nightlife and event photography. Our journey has been all about capturing the raw energy and vibrant moments of every event we shoot.
-      </p>
+      <h2>About Me</h2>
+
     </div>
 
-    {/* Image on the left, text on the right */}
-    <div className="about-row reverse">
-    
-      <div className="about-text">
-        <h3>Hi, I'm Nino</h3>
-        <p>
-          My name is Nino. I live in Suhr Aargau and work as a gardener. I met Ahmad at a party he organized with his team and quickly got interested in the behind the scenes of partys. From 2022 till today I am part of his team where I lead projects and organzie events. Since I was a kid I liked taking pictures of everything around me and to capture the moment with all it's emotions. I thrive to tell a story with the pictures I take and lead the viewer in an adventure. Contact us and let's capture the story of your event! 
-        </p>
-        
-      </div>
-      <div className="about-image">
-        <img src="about-image.jpg" alt="Ahmado & Nino" />
-      </div>
-    </div>
+
 
     {/* Text on the left, image on the right */}
     <div className="about-row">

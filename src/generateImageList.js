@@ -2,10 +2,10 @@ const fs = require("fs");
 const path = require("path");
 
 // Path to your images directory
-const directoryPath = path.join(__dirname, "../public/shinefest_15_03_2025/JPEG");
+const directoryPath = path.join(__dirname, "../public/plaza_29_03_25/JPEG");
 
 // Path to save the generated JSON file
-const outputPath = path.join(__dirname, "../public/shinefest_15_03_2025/imageList.json");
+const outputPath = path.join(__dirname, "../public/plaza_29_03_25/imageList.json");
 
 fs.readdir(directoryPath, (err, files) => {
   if (err) {

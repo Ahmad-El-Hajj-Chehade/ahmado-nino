@@ -20,12 +20,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/plaza_25_01_25" element={<PlazaAlbum />} />
         <Route path="/umea_31_12_24" element={<UmeaAlbum />} />
-        <Route path="/utope_21_12_24" element={<UtopeKaufleutenAlbum />} />
-        <Route path="/kaufleuten_21_12_24" element={<KaufleutenAlbum />} />
-        <Route path="/praisecamp" element={<PraisecampAlbum />} />
-        <Route path="/primeside-festival" element={<PrimesideAlbum />} />
         <Route path="/muri-fasnacht" element={<MuriFasnachtAlbum />} />
-          <Route path="/shinefest" element={<ShineFestAlbum />} />
+          <Route path="/ptb13" element={<MuriFasnachtAlbum />} />
+
       </Routes>
     </BrowserRouter>
   );
