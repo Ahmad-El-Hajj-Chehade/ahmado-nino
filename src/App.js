@@ -8,6 +8,7 @@ import UmeaAlbum from "./pages/UmeaAlbum";
 import MuriFasnachtAlbum from "./pages/MuriFasnachtAlbum";
 import "./App.css";
 import PTB13Album from "./pages/PTB13Album";
+import DisneyAlbum from "./pages/DisneyAlbum";
 
 
 const App = () => {
@@ -19,8 +20,7 @@ const App = () => {
         <Route path="/plaza_25_01_25" element={<PlazaAlbum />} />
         <Route path="/umea_31_12_24" element={<UmeaAlbum />} />
         <Route path="/muri-fasnacht" element={<MuriFasnachtAlbum />} />
-          <Route path="/ptb13" element={<PTB13Album />} />
-
+          <Route path="/disney_ipartypeople" element={<DisneyAlbum />} />
       </Routes>
     </BrowserRouter>
   );
