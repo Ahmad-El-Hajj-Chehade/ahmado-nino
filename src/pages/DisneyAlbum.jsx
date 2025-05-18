@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Albumstyling.css";
 
-const Disney = () => {
+const DisneyAlbum = () => {
   const [imageFilenames, setImageFilenames] = useState([]);
   const [lightboxImageIndex, setLightboxImageIndex] = useState(null);
 
@@ -92,7 +92,7 @@ const Disney = () => {
               <span className="close-btn" onClick={closeLightbox}>&times;</span>
               <img
                   className="lightbox-img"
-                  src={`${process.env.PUBLIC_URL}/kanzlei_17_05_2025/JPEG/${imageFilenames[lightboxImageIndex]}`}
+                  src={`${process.env.PUBLIC_URL}/kanzlei_17_05_25/JPEG/${imageFilenames[lightboxImageIndex]}`}
                   alt="Enlarged"
               />
               <button className="prev-btn" onClick={(e) => { e.stopPropagation(); goPrev(); }}>&#10094;</button>
@@ -103,4 +103,4 @@ const Disney = () => {
   );
 };
 
-export default Disney;
+export default DisneyAlbum;
