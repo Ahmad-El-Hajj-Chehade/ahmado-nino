@@ -73,7 +73,7 @@ const Disney = () => {
         <h1>Disney Party</h1>
         <div className="album-grid">
           {imageFilenames.map((filename, index) => {
-            const imagePath = `${process.env.PUBLIC_URL}/muri_08_02_2025/JPEG/${filename}`;
+            const imagePath = `${process.env.PUBLIC_URL}/kanzlei_17_05_25/JPEG/${filename}`;
             return (
                 <div key={index} className="album-item" onClick={() => openLightbox(index)}>
                   <img src={imagePath} alt={`Disney ${index + 1}`} loading="lazy" />
