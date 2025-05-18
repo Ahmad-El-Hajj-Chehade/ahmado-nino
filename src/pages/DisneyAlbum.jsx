@@ -7,7 +7,7 @@ const DisneyAlbum = () => {
 
   useEffect(() => {
     // Fetch the JSON file
-    fetch(`${process.env.PUBLIC_URL}/kanzlei_17_05_2025/imageList.json`)
+    fetch(`${process.env.PUBLIC_URL}/kanzlei_17_05_25/imageList.json`)
         .then((response) => response.json())
         .then((data) => setImageFilenames(data))
         .catch((error) => console.error("Error loading images:", error));
