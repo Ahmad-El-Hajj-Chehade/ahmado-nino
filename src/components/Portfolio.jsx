@@ -9,6 +9,17 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       </div>
       <div className="albums">
+          <Link to="/disneyparty" className="album">
+              <h3>Disneyparty by ipartypeople</h3>
+              <p>
+                  Nightlife | People
+              </p>
+              <img
+                  src="kanzlei_17_05_25/JPEG/K_Disney-175.jpg"
+                  alt="Disneyparty_Ahmad"
+              />
+
+          </Link>
           <Link to="/ptb13" className="album">
               <h3>13 Years PLAZE TO BE</h3>
               <p>
