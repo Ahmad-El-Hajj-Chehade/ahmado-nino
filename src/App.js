@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/plaza_25_01_25" element={<PlazaAlbum />} />
         <Route path="/umea_31_12_24" element={<UmeaAlbum />} />
         <Route path="/muri-fasnacht" element={<MuriFasnachtAlbum />} />
-          <Route path="/ptb" element={<PTB13Album />} />
+          <Route path="/ptb13" element={<PTB13Album />} />
           <Route path="/disneyparty" element={<DisneyAlbum />} />
       </Routes>
     </BrowserRouter>
