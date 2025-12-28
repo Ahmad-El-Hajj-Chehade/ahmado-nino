@@ -1,124 +1,117 @@
-/* Portfolio Section */
 .portfolio {
-  padding: 50px 20px;
-  
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Albums Grid */
-.albums {
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two albums per row */
-  grid-row: auto;
-  grid-column-gap:50px;
-  grid-row-gap: 50px;
-  justify-items: center;
-  
-}
-
-
-/* Album Card */
-.album {
-  text-decoration: none;
-  background: #141414;
-  padding: 20px;
- 
-  border-radius: 10px;
-  box-shadow: 0 4px 10px #141414;
-  text-align: center;
-  transition: transform 0.3s ease;
-  width: 100%;
-  max-width: 400px; /* Ensures uniform width */
-  min-width: 100px;
-}
-.portfolio-title{
-  padding-bottom: 50px;
-}
-.album:hover {
-  transform: scale(1.02);
-}
-
-/* Album Cover Image */
-.album img {
-  width: 100%;
-  height: 80%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-/* Album Title */
-.album h3 {
-  font-size: 1.5em;
-  color: #ffffff;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-/* Album Description */
-.album p {
-  font-size: 1em;
-  color: #bbbbbb;
-  font-weight: 300;
-  margin-top: 5px;
-  line-height: 1.5;
-}
-.title{
-  text-decoration: none;
-  color: #ffffff;
-}
-/* Lightbox */
-.lightbox {
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 0;
+  background-color: #000;
+}
+
+.portfolio-container {
+  width: 50%; /* Erzeugt die leeren Viertel links und rechts */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Zwei Spalten als Basis */
+  grid-auto-rows: 400px; /* Standardhöhe für Querformate */
+  gap: 15px;
+}
+
+.grid-item {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.95);
+  position: relative;
+  overflow: hidden;
+  background-color: #111; /* Platzhalterfarbe während des Ladens */
+}
+
+.grid-item img, 
+.grid-item iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  object-fit: cover; /* Verhindert Verzerrung bei Bildern */
+}
+
+/* Layout-Klassen */
+
+.item-wide {
+  grid-row: span 2;
+  grid-column: span 2; /* Füllt die gesamte Breite des Containers */
+}
+
+.item-tall {
+  grid-row: span 2; /* Macht das Bild doppelt so hoch wie ein Standardbild */
+  height: 815px; /* (400px * 2) + 15px Gap */
+}
+
+/* Spezial-Korrekturen für Social Media Embeds */
+
+.video-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3000;
 }
 
-.lightbox-img {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
-  border-radius: 5px;
+.instagram-media {
+   box-shadow: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-width: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+}
+.tiktok-container div {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
 }
 
-.close-btn {
+.tiktok-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
   position: absolute;
-  top: 20px;
-  right: 30px;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
+  top: 0;
+  left: 0;
 }
-.menu-icon{
-  display: none;
+
+/* Entfernt zusätzliche Abstände, die TikTok generiert */
+.tiktok-embed {
+  box-shadow: none !important;
+  border: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 }
-/* Responsive Design */
-@media (max-width: 650px) {
-  .portfolio {
-    padding: 80px 15px;
+
+/* Responsive Design für Tablets und Smartphones */
+
+@media (max-width: 1200px) {
+  .portfolio-container {
+    width: 70%; /* Weniger Rand auf kleineren Desktops */
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    width: 95%; /* Fast volle Breite auf Handys */
   }
 
-  .menu-icon{
-    justify-content: center;
-    display:grid;
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Nur eine Spalte auf dem Handy */
+    grid-auto-rows: auto;
   }
 
-  .album {
-    max-width: 90%;
-  }
-
-  .albums {
-    gap: 20px;
+  .item-tall, 
+  .item-wide {
+    grid-column: auto;
+    grid-row: auto;
+    height: 450px; /* Einheitliche Höhe für mobile Ansicht */
   }
 }
