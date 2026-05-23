@@ -3,36 +3,35 @@ import "./Contact.css";
 
 const Contact = () => (
   <section id="contact" className="contact-section">
-    <div className="contact-container">
-      <h2>Contact</h2>
-      <div className="contact-info">
+    <div className="contact-inner">
+      <div className="section-title">
+        <h2>Let's Connect</h2>
+      </div>
+      <p className="contact-subtitle">
+        Interested in working together? Reach out and let's create something memorable.
+      </p>
 
-        {/* Instagram - Ahmado */}
-        <div className="contact-item">
-         
-          <a
-            href="https://www.instagram.com/ahmado.photography/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>ahmado.photography </span>
-          </a>
-          <i className="fab fa-instagram"></i>
-        </div>
-
-
-
-        {/* Phone */}
-        <div className="contact-item">
-        
-          <a href="tel:+41775052375">+41 77 505 23 75 </a>
-          <i className="fas fa-phone"></i>
-        </div>
+      <div className="contact-cards">
+        <a
+          href="https://www.instagram.com/ahmado.photography/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-card"
+        >
+          <div className="contact-card-icon">
+            <i className="fab fa-instagram"></i>
+          </div>
+          <div className="contact-card-text">
+            <span className="contact-card-label">Instagram</span>
+            <span className="contact-card-value">@ahmado.photography</span>
+          </div>
+          <i className="fas fa-arrow-right contact-arrow"></i>
+        </a>
       </div>
 
-      <div className="credits">
-        <p>Ahmado Photography</p>
-      </div>
+      <footer className="contact-footer">
+        <p>&copy; {new Date().getFullYear()} Ahmado Photography &middot; All rights reserved</p>
+      </footer>
     </div>
   </section>
 );

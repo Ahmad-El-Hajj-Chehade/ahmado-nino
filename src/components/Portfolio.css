@@ -1,63 +1,89 @@
 .portfolio {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 60px 0;
-  background-color: #000;
+  background-color: var(--bg);
+  padding: 100px 0 120px;
 }
 
 .portfolio-container {
-  width: 50%; /* Erzeugt die leeren Viertel links und rechts */
-  max-width: 1400px;
+  width: 85%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Zwei Spalten als Basis */
-  grid-auto-rows: 400px; /* Standardhöhe für Querformate */
-  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 400px;
+  gap: 10px;
 }
 
 .grid-item {
-  width: 100%;
-  height: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #111; /* Platzhalterfarbe während des Ladens */
+  background-color: var(--surface);
+  cursor: pointer;
+  border-radius: var(--radius);
+  outline: none;
 }
 
-.grid-item img, 
+.grid-item:focus-visible {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.grid-item img,
 .grid-item iframe {
   width: 100%;
   height: 100%;
   display: block;
   border: none;
-  object-fit: cover; /* Verhindert Verzerrung bei Bildern */
+  object-fit: cover;
+  transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Layout-Klassen */
+.grid-item:not(.video-container):hover img {
+  transform: scale(1.05);
+}
 
+/* Hover overlay */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.grid-overlay i {
+  font-size: 1.6rem;
+  color: #fff;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+}
+
+.grid-item:not(.video-container):hover .grid-overlay {
+  opacity: 1;
+}
+
+/* Layout variants */
 .item-wide {
+  grid-column: span 2;
   grid-row: span 2;
-  grid-column: span 2; /* Füllt die gesamte Breite des Containers */
 }
 
 .item-tall {
-  grid-row: span 2; /* Macht das Bild doppelt so hoch wie ein Standardbild */
-  height: 815px; /* (400px * 2) + 15px Gap */
+  grid-row: span 2;
+  height: 810px;
 }
 
-/* Spezial-Korrekturen für Social Media Embeds */
-
+/* Video / embed items */
 .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
 }
 
 .instagram-media {
-   box-shadow: none !important;
+  box-shadow: none !important;
   border: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -66,52 +92,34 @@
   height: 100% !important;
   max-width: 100% !important;
 }
-.tiktok-container div {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-}
 
-.tiktok-container iframe {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 100% !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* Entfernt zusätzliche Abstände, die TikTok generiert */
-.tiktok-embed {
-  box-shadow: none !important;
-  border: none !important;
-  margin: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-/* Responsive Design für Tablets und Smartphones */
-
+/* Responsive */
 @media (max-width: 1200px) {
   .portfolio-container {
-    width: 70%; /* Weniger Rand auf kleineren Desktops */
+    width: 92%;
   }
 }
 
 @media (max-width: 768px) {
+  .portfolio {
+    padding: 80px 0 100px;
+  }
+
   .portfolio-container {
-    width: 95%; /* Fast volle Breite auf Handys */
+    width: 100%;
+    padding: 0 12px;
   }
 
   .portfolio-grid {
-    grid-template-columns: 1fr; /* Nur eine Spalte auf dem Handy */
+    grid-template-columns: 1fr;
     grid-auto-rows: auto;
+    gap: 8px;
   }
 
-  .item-tall, 
+  .item-tall,
   .item-wide {
     grid-column: auto;
     grid-row: auto;
-    height: 450px; /* Einheitliche Höhe für mobile Ansicht */
+    height: 400px;
   }
 }
